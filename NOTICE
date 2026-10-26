@@ -1,0 +1,43 @@
+Market Terminal — NOTICE
+========================
+
+Attribution
+-----------
+
+This project began as a copy of "BBterminal" by Vaughan Fawcett
+(https://github.com/vaughanf1/BB-Terminal), taken from upstream commit 74f9176.
+The terminal shell, the original function catalogue, the signal classifiers and
+the OpenBB integration originate from that work; this repository extends it
+(portfolio simulation, execution algorithms, performance/risk analytics,
+screener, point-in-time simulation clock, tests, synthetic demo mode, and more).
+
+At the time it was copied, the upstream repository carried no LICENSE file.
+Under default copyright, all rights in the upstream code remain with its author.
+Nothing in this repository purports to license the upstream author's work.
+
+Independence
+------------
+
+Market Terminal is an independent, educational, terminal-style project. It is
+not affiliated with, endorsed by, sponsored by, or connected to any financial
+data vendor, exchange, broker, or terminal provider. Function codes are short
+generic mnemonics chosen for keyboard-driven navigation.
+
+Third-party components
+----------------------
+
+- OpenBB Platform (AGPL-3.0) — optional, live mode only. Installed by the user
+  as a separate process and reached over its local HTTP API; not bundled or
+  modified by this project.
+- Live-mode data providers reached through OpenBB (e.g. Yahoo Finance, Finviz,
+  Federal Reserve, SEC) are subject to their own terms of service. Personal,
+  non-commercial use only. No third-party data is included in this repository.
+- JetBrains Mono font via @fontsource/jetbrains-mono (SIL Open Font License 1.1).
+- npm dependencies are listed in app/package.json under their own licenses.
+
+Synthetic data
+--------------
+
+The default demo mode generates all prices, fundamentals, headlines and option
+chains in the browser from a seeded random process (app/src/lib/synthetic.ts).
+No real market data is shown in synthetic mode.
